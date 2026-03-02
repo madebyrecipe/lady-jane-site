@@ -2672,7 +2672,7 @@ body.menu-open .site-nav {
   position: relative;
   width: 100%;
   height: 300vh;
-  background: #000;
+  background: #E8E0D8;
 }
 .text-banner-sticky {
   position: sticky;
@@ -2720,6 +2720,18 @@ body.menu-open .site-nav {
   background: #2C1F14;
   transform-origin: center;
   will-change: transform;
+  overflow: hidden;
+}
+.text-banner-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 .text-banner-vignette {
   position: absolute;
