@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Lady Jane Life & Legacy Planning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="services">
+  <!-- ========== SITE NAV ========== -->
+  <nav class="site-nav" style="width: 100%; padding: 40px 56px 32px 56px; overflow: hidden; justify-content: center; align-items: center; display: inline-flex;">
+    <div style="width: 100%; max-width: 1616px; justify-content: space-between; align-items: center; display: flex;">
+      <!-- LEFT: Logo + Links -->
+      <div class="nav-left" style="justify-content: flex-start; align-items: center; gap: 24px; display: flex;">
+        <a href="index.html" class="nav-logo">
+          <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.95 9C23.0545 9 23.95 9.89543 23.95 11V18H15.95C14.8454 18 13.95 18.8954 13.95 20V25C13.95 26.1046 13.0545 27 11.95 27H6.94995C5.84538 27 4.94995 26.1046 4.94995 25V11C4.94995 9.89543 5.84538 9 6.94995 9H21.95ZM32.95 25C32.95 26.1046 32.0545 27 30.95 27H25.95C24.8454 27 23.95 26.1046 23.95 25V18H30.95C32.0545 18 32.95 18.8954 32.95 20V25Z" fill="var(--color-grey-93, #EEEEEE)"/>
+          </svg>
+        </a>
+        <div class="nav-links" style="justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex;">
+          <a href="index.html" style="width: 57px; height: 35px; position: relative; overflow: hidden; border-radius: 25px; text-decoration: none;">
+            <span class="nav-text" style="left: 10px; top: 7px; position: absolute; color: var(--color-grey-63, #9DA1A2); font-size: 13.3px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Home</span>
+            <span class="nav-text-hover" style="left: 10px; top: 36px; position: absolute; color: var(--color-grey-93, #EEEEEE); font-size: 13.3px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Home</span>
+          </a>
+          <a href="about.html" style="width: 57px; height: 35px; position: relative; overflow: hidden; border-radius: 25px; text-decoration: none;">
+            <span class="nav-text" style="left: 10px; top: 7px; position: absolute; color: var(--color-grey-64, #A1A5A6); font-size: 12.8px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">About</span>
+            <span class="nav-text-hover" style="left: 10px; top: 36px; position: absolute; color: var(--color-grey-93, #EEEEEE); font-size: 12.8px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">About</span>
+          </a>
+          <a href="stories.html" style="width: 52px; height: 35px; position: relative; overflow: hidden; border-radius: 25px; text-decoration: none;">
+            <span class="nav-text" style="left: 10px; top: 7px; position: absolute; color: var(--color-grey-64, #A1A5A6); font-size: 13.2px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Work</span>
+            <span class="nav-text-hover" style="left: 10px; top: 36px; position: absolute; color: var(--color-grey-93, #EEEEEE); font-size: 13.2px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Work</span>
+          </a>
+          <a href="services.html" style="width: 72px; height: 35px; position: relative; overflow: hidden; border-radius: 25px; text-decoration: none;">
+            <span class="nav-text" style="left: 10px; top: 7px; position: absolute; color: var(--color-grey-64, #A1A5A6); font-size: 12.7px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Services</span>
+            <span class="nav-text-hover" style="left: 10px; top: 36px; position: absolute; color: var(--color-grey-93, #EEEEEE); font-size: 12.7px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Services</span>
+          </a>
+        </div>
+      </div>
+      <!-- RIGHT: Links + CTA -->
+      <div class="nav-right" style="height: 38px; justify-content: flex-start; align-items: center; gap: 13px; display: flex;">
+        <div class="nav-links" style="justify-content: flex-start; align-items: flex-start; gap: 13px; display: flex;">
+          <a href="blog.html" style="width: 130px; height: 35px; position: relative; overflow: hidden; border-radius: 25px; text-decoration: none;">
+            <span class="nav-text" style="left: 10px; top: 7px; position: absolute; color: var(--color-grey-64, #A1A5A6); font-size: 12.7px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px; white-space: nowrap;">News &amp; Insights</span>
+            <span class="nav-text-hover" style="left: 10px; top: 36px; position: absolute; color: var(--color-grey-93, #EEEEEE); font-size: 12.7px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px; white-space: nowrap;">News &amp; Insights</span>
+          </a>
+          <a href="contact.html#faq" style="width: 46px; height: 35px; position: relative; overflow: hidden; border-radius: 25px; text-decoration: none;">
+            <span class="nav-text" style="left: 10px; top: 7px; position: absolute; color: var(--color-grey-64, #A1A5A6); font-size: 13.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">FAQ</span>
+            <span class="nav-text-hover" style="left: 10px; top: 36px; position: absolute; color: var(--color-grey-93, #EEEEEE); font-size: 13.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">FAQ</span>
+          </a>
+        </div>
+        <a href="contact.html" class="nav-cta" style="width: 96.85px; align-self: stretch; position: relative; background: var(--color-grey-87, #DFDFDF); overflow: hidden; border-radius: 20px; text-decoration: none;">
+          <span class="nav-text" style="left: 24px; top: 8px; position: absolute; color: var(--color-grey-7, #111111); font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Contact</span>
+          <span class="nav-text-hover" style="left: 24px; top: 45px; position: absolute; color: var(--color-grey-7, #111111); font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Contact</span>
+        </a>
+      </div>
+      <button class="nav-hamburger" aria-label="Toggle menu">
+        <span class="menu-label">MENU</span>
+        <span class="close-label">CLOSE</span>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile Menu -->
+  <div class="nav-mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="stories.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">News & Insights</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </div>
+
+  <div class="page">
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="section page-header" id="top">
+      <div class="page-header-container">
+        <span class="tag">SERVICES</span>
+        <h1 class="page-title">Wills, trusts, and legacy planning</h1>
+      </div>
+    </section>
+
+    <!-- ========== SERVICE DETAILS ========== -->
+    <section class="section services" id="services-detail" style="height:auto;">
+      <div class="section-container" style="height:auto; padding: 80px 40px;">
+        <div class="services-wrap" style="height:auto;">
+
+          <!-- Estate Planning -->
+          <div class="service-detail anim-child">
+            <div class="detail-image"></div>
+            <div class="detail-content">
+              <span class="detail-tag">ESTATE PLANNING</span>
+              <h3 class="detail-title">Protect your family with a thoughtful plan</h3>
+              <p class="detail-desc">Lady Jane Life & Legacy Planning provides personalized estate planning guidance to help individuals and families protect their assets, clarify their wishes, and create a lasting legacy.</p>
+              <ul class="detail-features">
+                <li>Will Planning Support</li>
+                <li>Trust Planning Guidance</li>
+                <li>Comprehensive Estate Plan Review</li>
+                <li>Incapacity Planning</li>
+                <li>Legacy & Values Planning</li>
+                <li>Education & Workshops</li>
+              </ul>
+              <a href="contact.html" class="btn-detail">Schedule a Consultation</a>
+            </div>
+          </div>
+
+          <!-- Trust Planning Guidance -->
+          <div class="service-detail anim-child" style="flex-direction: row-reverse;">
+            <div class="detail-image"></div>
+            <div class="detail-content">
+              <span class="detail-tag">TRUST PLANNING GUIDANCE</span>
+              <h3 class="detail-title">Manage your trust with clarity and care</h3>
+              <p class="detail-desc">Assistance with revocable living trusts and other trust structures to help clients avoid probate, protect assets, and plan for long-term family needs.</p>
+              <ul class="detail-features">
+                <li>Trust Funding & Asset Retitling</li>
+                <li>Successor Trustee Guidance</li>
+                <li>Beneficiary Communication</li>
+                <li>Trust Accounting & Reporting</li>
+                <li>Trust Amendments & Restatements</li>
+              </ul>
+              <a href="contact.html" class="btn-detail">Schedule a Consultation</a>
+            </div>
+          </div>
+
+          <!-- Probate & Succession -->
+          <div class="service-detail anim-child">
+            <div class="detail-image"></div>
+            <div class="detail-content">
+              <span class="detail-tag">PARDONS REPRESENTATION</span>
+              <h3 class="detail-title">Restoring rights with compassion</h3>
+              <p class="detail-desc">Compassionate legal representation for pardons cases, helping clients navigate the process with dignity and work toward restoring their rights.</p>
+              <ul class="detail-features">
+                <li>Pardons Case Evaluation</li>
+                <li>Application Preparation & Filing</li>
+                <li>Hearing Representation</li>
+                <li>Rights Restoration Guidance</li>
+                <li>Post-Pardon Support</li>
+              </ul>
+              <a href="contact.html" class="btn-detail">Schedule a Consultation</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="section process-section" id="process">
+      <div class="section-container">
+        <div class="process-heading anim-child">
+          <span class="tag">HOW IT WORKS</span>
+          <h2>Four steps to peace of mind</h2>
+        </div>
+        <div class="process-steps anim-child">
+          <div class="process-step">
+            <span class="step-number">01</span>
+            <h3 class="step-title">Consultation</h3>
+            <p class="step-desc">A warm, no-pressure conversation to understand your family's unique needs and goals.</p>
+          </div>
+          <div class="process-step">
+            <span class="step-number">02</span>
+            <h3 class="step-title">Strategy</h3>
+            <p class="step-desc">We design a customized plan that protects your assets, minimizes taxes, and honors your wishes.</p>
+          </div>
+          <div class="process-step">
+            <span class="step-number">03</span>
+            <h3 class="step-title">Documentation</h3>
+            <p class="step-desc">Every document is carefully drafted, reviewed, and executed with precision and care.</p>
+          </div>
+          <div class="process-step">
+            <span class="step-number">04</span>
+            <h3 class="step-title">Ongoing Support</h3>
+            <p class="step-desc">Life changes. We check in regularly to make sure your plan evolves with your family.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BANNER / CTA ========== -->
+    <section class="section banner" id="banner">
+      <div class="section-container">
+        <div class="banner-wrap anim-child">
+          <div class="banner-text">
+            <h2>Your family's <span class="accent">legacy</span> starts here</h2>
+          </div>
+          <div class="banner-cta">
+            <a href="contact.html" class="pricing-cta-group cta-brown" style="text-decoration: none;">
+              <span class="pricing-cta-main">
+                <span class="pricing-cta-label">Book a Consultation</span>
+                <svg class="pricing-cta-arrow-right" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M3.5 9H14.5M14.5 9L10 4.5M14.5 9L10 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="pricing-cta-circle">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path d="M1 10L10 1M10 1H3M10 1V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer id="footer" style="width: 100%; padding: 15.87px; background: var(--color-grey-84, #D3D8DA); overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: inline-flex;">
+      <div style="align-self: stretch; min-height: 700px; padding-left: 39.67px; padding-right: 39.67px; position: relative; background: var(--color-grey-9, #161616); overflow: hidden; border-radius: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex;">
+        <div style="width: 100%; height: 100%; left: 0; top: 0; position: absolute; opacity: 0.15; overflow: hidden;">
+          <img style="width: 100%; height: 100%; object-fit: cover; opacity: 0.20;" src="https://placehold.co/1716x925" alt="" />
+        </div>
+        <div style="align-self: stretch; padding-top: 55.54px; padding-bottom: 31.74px; flex-direction: column; justify-content: space-between; align-items: flex-start; gap: 80px; display: flex; position: relative; z-index: 1; min-height: 600px;">
+          <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; gap: 79.35px; display: flex;">
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 55.55px; display: flex;">
+              <div style="justify-content: flex-start; align-items: flex-end; gap: 11.9px; display: inline-flex;">
+                <div style="color: var(--color-grey-89, #E0E4E5); font-size: 271.3px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 230.42px;">lady jane</div>
+                <div style="color: var(--color-grey-89, #E0E4E5); font-size: 44.5px; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 59.11px;">life & legacy</div>
+              </div>
+              <div style="align-self: stretch; height: 3.96px; flex-direction: column; justify-content: center; align-items: flex-start; display: flex;">
+                <div style="align-self: stretch; height: 1px; opacity: 0.15; background: var(--color-grey-89, #E0E4E5);"></div>
+              </div>
+            </div>
+            <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex; flex-wrap: wrap; align-content: flex-start;">
+              <div style="flex: 1 1 0; max-width: 433px; padding-right: 63.48px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 25.79px; display: inline-flex;">
+                <div style="align-self: stretch; color: var(--color-grey-84, #D3D8DA); font-size: 15.2px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 23.8px;">Let's protect what matters most — whether you have a plan in mind or just want to learn your options, we'd love to hear from you.</div>
+                <a href="contact.html" class="pricing-cta-group cta-light" style="text-decoration: none;">
+                  <span class="pricing-cta-main">
+                    <span class="pricing-cta-label">Book a 15-min call</span>
+                    <svg class="pricing-cta-arrow-right" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M3.5 9H14.5M14.5 9L10 4.5M14.5 9L10 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <span class="pricing-cta-circle">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                      <path d="M1 10L10 1M10 1H3M10 1V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20.83px; display: inline-flex;">
+                <div style="opacity: 0.60; color: var(--color-grey-93, #EEEEEE); font-size: 11.3px; font-family: 'Inter', sans-serif; font-weight: 500; text-transform: uppercase; line-height: 17.85px; letter-spacing: 0.71px;">Sitemap</div>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 23.8px; display: flex;">
+                  <a href="index.html" style="color: var(--color-grey-84, #D3D8DA); font-size: 13.2px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Home</a>
+                  <a href="about.html" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">About</a>
+                  <a href="services.html" style="color: var(--color-grey-84, #D3D8DA); font-size: 13.1px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Services</a>
+                  <a href="contact.html" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Contact</a>
+                </div>
+              </div>
+              <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20.83px; display: inline-flex;">
+                <div style="opacity: 0.60; color: var(--color-grey-93, #EEEEEE); font-size: 11.7px; font-family: 'Inter', sans-serif; font-weight: 500; text-transform: uppercase; line-height: 17.85px; letter-spacing: 0.71px;">Resources</div>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 23.8px; display: flex;">
+                  <a href="stories.html" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.8px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Stories</a>
+                  <a href="plans.html#faq" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">FAQ</a>
+                  <a href="plans.html" style="color: var(--color-grey-84, #D3D8DA); font-size: 13.4px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Plans</a>
+                  <a href="about.html#news" style="color: var(--color-grey-84, #D3D8DA); font-size: 13.1px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Insights</a>
+                </div>
+              </div>
+              <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20.83px; display: inline-flex;">
+                <div style="opacity: 0.60; color: var(--color-grey-93, #EEEEEE); font-size: 11.7px; font-family: 'Inter', sans-serif; font-weight: 500; text-transform: uppercase; line-height: 17.85px; letter-spacing: 0.71px;">Social</div>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 23.8px; display: flex;">
+                  <a href="#" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.7px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Instagram</a>
+                  <a href="#" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">LinkedIn</a>
+                  <a href="#" style="color: var(--color-grey-84, #D3D8DA); font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Facebook</a>
+                  <a href="#" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.3px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Twitter</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex;">
+            <div style="justify-content: center; align-items: center; gap: 15.9px; display: flex;">
+              <div style="justify-content: flex-start; align-items: center; gap: 3.97px; display: flex;">
+                <span style="color: var(--color-grey-84, #D3D8DA); font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px;">Copyright</span>
+                <span style="color: var(--color-grey-84, #D3D8DA); font-size: 13.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px;">&copy;</span>
+              </div>
+              <div style="justify-content: flex-start; align-items: flex-start; gap: 3.96px; display: flex;">
+                <span style="opacity: 0.50; color: var(--color-grey-84, #D3D8DA); font-size: 12.8px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px;">Developed by</span>
+                <span style="color: var(--color-grey-84, #D3D8DA); font-size: 12.6px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px;">Lady Jane</span>
+              </div>
+              <div style="justify-content: flex-start; align-items: flex-start; gap: 3.97px; display: flex;">
+                <span style="opacity: 0.50; color: var(--color-grey-84, #D3D8DA); font-size: 12.8px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px;">Powered by</span>
+                <span style="color: var(--color-grey-84, #D3D8DA); font-size: 12.8px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px;">Recipe Labs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

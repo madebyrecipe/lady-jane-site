@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Lady Jane Life & Legacy Planning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="about">
+  <!-- ========== SITE NAV ========== -->
+  <nav class="site-nav" style="width: 100%; padding: 40px 56px 32px 56px; overflow: hidden; justify-content: center; align-items: center; display: inline-flex;">
+    <div style="width: 100%; max-width: 1616px; justify-content: space-between; align-items: center; display: flex;">
+      <!-- LEFT: Logo + Links -->
+      <div class="nav-left" style="justify-content: flex-start; align-items: center; gap: 24px; display: flex;">
+        <a href="index.html" class="nav-logo">
+          <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.95 9C23.0545 9 23.95 9.89543 23.95 11V18H15.95C14.8454 18 13.95 18.8954 13.95 20V25C13.95 26.1046 13.0545 27 11.95 27H6.94995C5.84538 27 4.94995 26.1046 4.94995 25V11C4.94995 9.89543 5.84538 9 6.94995 9H21.95ZM32.95 25C32.95 26.1046 32.0545 27 30.95 27H25.95C24.8454 27 23.95 26.1046 23.95 25V18H30.95C32.0545 18 32.95 18.8954 32.95 20V25Z" fill="var(--color-grey-93, #EEEEEE)"/>
+          </svg>
+        </a>
+        <div class="nav-links" style="justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex;">
+          <a href="index.html" style="width: 57px; height: 35px; position: relative; overflow: hidden; border-radius: 25px; text-decoration: none;">
+            <span class="nav-text" style="left: 10px; top: 7px; position: absolute; color: var(--color-grey-63, #9DA1A2); font-size: 13.3px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Home</span>
+            <span class="nav-text-hover" style="left: 10px; top: 36px; position: absolute; color: var(--color-grey-93, #EEEEEE); font-size: 13.3px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Home</span>
+          </a>
+          <a href="about.html" style="width: 57px; height: 35px; position: relative; overflow: hidden; border-radius: 25px; text-decoration: none;">
+            <span class="nav-text" style="left: 10px; top: 7px; position: absolute; color: var(--color-grey-64, #A1A5A6); font-size: 12.8px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">About</span>
+            <span class="nav-text-hover" style="left: 10px; top: 36px; position: absolute; color: var(--color-grey-93, #EEEEEE); font-size: 12.8px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">About</span>
+          </a>
+          <a href="stories.html" style="width: 52px; height: 35px; position: relative; overflow: hidden; border-radius: 25px; text-decoration: none;">
+            <span class="nav-text" style="left: 10px; top: 7px; position: absolute; color: var(--color-grey-64, #A1A5A6); font-size: 13.2px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Work</span>
+            <span class="nav-text-hover" style="left: 10px; top: 36px; position: absolute; color: var(--color-grey-93, #EEEEEE); font-size: 13.2px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Work</span>
+          </a>
+          <a href="services.html" style="width: 72px; height: 35px; position: relative; overflow: hidden; border-radius: 25px; text-decoration: none;">
+            <span class="nav-text" style="left: 10px; top: 7px; position: absolute; color: var(--color-grey-64, #A1A5A6); font-size: 12.7px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Services</span>
+            <span class="nav-text-hover" style="left: 10px; top: 36px; position: absolute; color: var(--color-grey-93, #EEEEEE); font-size: 12.7px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Services</span>
+          </a>
+        </div>
+      </div>
+      <!-- RIGHT: Links + CTA -->
+      <div class="nav-right" style="height: 38px; justify-content: flex-start; align-items: center; gap: 13px; display: flex;">
+        <div class="nav-links" style="justify-content: flex-start; align-items: flex-start; gap: 13px; display: flex;">
+          <a href="blog.html" style="width: 130px; height: 35px; position: relative; overflow: hidden; border-radius: 25px; text-decoration: none;">
+            <span class="nav-text" style="left: 10px; top: 7px; position: absolute; color: var(--color-grey-64, #A1A5A6); font-size: 12.7px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px; white-space: nowrap;">News &amp; Insights</span>
+            <span class="nav-text-hover" style="left: 10px; top: 36px; position: absolute; color: var(--color-grey-93, #EEEEEE); font-size: 12.7px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px; white-space: nowrap;">News &amp; Insights</span>
+          </a>
+          <a href="contact.html#faq" style="width: 46px; height: 35px; position: relative; overflow: hidden; border-radius: 25px; text-decoration: none;">
+            <span class="nav-text" style="left: 10px; top: 7px; position: absolute; color: var(--color-grey-64, #A1A5A6); font-size: 13.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">FAQ</span>
+            <span class="nav-text-hover" style="left: 10px; top: 36px; position: absolute; color: var(--color-grey-93, #EEEEEE); font-size: 13.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">FAQ</span>
+          </a>
+        </div>
+        <a href="contact.html" class="nav-cta" style="width: 96.85px; align-self: stretch; position: relative; background: var(--color-grey-87, #DFDFDF); overflow: hidden; border-radius: 20px; text-decoration: none;">
+          <span class="nav-text" style="left: 24px; top: 8px; position: absolute; color: var(--color-grey-7, #111111); font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Contact</span>
+          <span class="nav-text-hover" style="left: 24px; top: 45px; position: absolute; color: var(--color-grey-7, #111111); font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Contact</span>
+        </a>
+      </div>
+      <button class="nav-hamburger" aria-label="Toggle menu">
+        <span class="menu-label">MENU</span>
+        <span class="close-label">CLOSE</span>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile Menu -->
+  <div class="nav-mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="stories.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">News & Insights</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </div>
+
+  <div class="page">
+    <!-- ========== 1. ABOUT HEADER (large text) ========== -->
+    <section class="section about-header" id="top">
+      <div class="section-container">
+        <div class="about-heading-wrap anim-child">
+          <h1 class="about-heading-text">about us</h1>
+          <div class="about-publisher">
+            <div class="publisher-avatar"></div>
+            <div class="publisher-info">
+              <span class="publisher-tagline">Estate planning, with heart.</span>
+              <span class="publisher-name">Tiana Hercules</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 2. HERO IMAGE ========== -->
+    <section class="section about-hero" id="about-hero">
+      <div class="about-hero-container"></div>
+    </section>
+
+    <!-- ========== 3. WHY LADY JANE (services-style layout) ========== -->
+    <section class="section why-us" id="why-us">
+      <div class="section-container">
+        <div class="why-us-wrap">
+          <div class="divider anim-child"></div>
+          <div class="wrapper anim-child">
+            <div class="subtitle">
+              <div class="tag">WHY LADY JANE</div>
+              <h2>From strategy to execution, every plan is designed to protect your legacy.</h2>
+            </div>
+            <div class="main-copy">Built for <span class="highlight">warmth and precision</span>, our process guides your family through wills, trusts, and succession with clarity — so you can focus on growing, nurturing, and standing together.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 3b. VALUE CARDS ========== -->
+    <section class="section services" id="values" style="height: auto; padding: 0 104px 80px;">
+      <div class="section-container" style="height: auto; padding: 0 40px;">
+        <div class="services-cards anim-child" style="height: auto;">
+          <div class="service-card" style="height: auto;">
+            <div class="img-wrap" style="height: 386px;"></div>
+            <div class="content" style="height: auto;">
+              <span class="label">WARMTH FIRST</span>
+              <p class="text">We approach every conversation with empathy and care. Estate planning can feel overwhelming — we make it feel human, not transactional.</p>
+            </div>
+          </div>
+          <div class="service-card" style="height: auto;">
+            <div class="img-wrap" style="height: 386px;"></div>
+            <div class="content" style="height: auto;">
+              <span class="label design">CLARITY ALWAYS</span>
+              <p class="text design">No legal jargon, no confusion. We explain every step in plain language so you always know exactly where you stand.</p>
+            </div>
+          </div>
+          <div class="service-card" style="height: auto;">
+            <div class="img-wrap" style="height: 386px;"></div>
+            <div class="content" style="height: auto;">
+              <span class="label dev">BUILT TOGETHER</span>
+              <p class="text dev">We believe great plans are collaborative. Our team thrives on building relationships where trust flows and your vision takes shape.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 4. RECOGNITION STATEMENT ========== -->
+    <section class="section works" id="recognition" style="gap: 0; padding-bottom: 0;">
+      <div class="works-inner" style="gap: 60px;">
+        <div class="works-header anim-child">
+          <p>Recognized for excellence in estate planning, client care, and legal precision — discover why <span class="highlight">Lady Jane is the trusted partner</span> of families navigating wills, trusts, and succession across Connecticut.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. AWARDS / CERTIFICATIONS ========== -->
+    <section class="section awards-section" id="awards">
+      <div class="section-container">
+        <div class="awards-list anim-child">
+          <div class="award-item">
+            <span class="award-source">WealthCounsel</span>
+            <span class="award-detail">Certified Member, Estate Planning Network</span>
+            <span class="award-count">Since 2015</span>
+          </div>
+          <div class="award-item">
+            <span class="award-source">ACTEC</span>
+            <span class="award-detail">Fellow, American College of Trust and Estate Counsel</span>
+            <span class="award-count">Since 2018</span>
+          </div>
+          <div class="award-item">
+            <span class="award-source">NAELA</span>
+            <span class="award-detail">National Academy of Elder Law Attorneys</span>
+            <span class="award-count">Since 2016</span>
+          </div>
+          <div class="award-item">
+            <span class="award-source">CT Bar</span>
+            <span class="award-detail">Board Certified Specialist, Estate Planning</span>
+            <span class="award-count">Since 2014</span>
+          </div>
+          <div class="award-item">
+            <span class="award-source">Super Lawyers</span>
+            <span class="award-detail">Rising Star, Estate & Trust Law</span>
+            <span class="award-count">x5 Years</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 6. IMAGE GALLERY ========== -->
+    <section class="section about-gallery" id="gallery">
+      <div class="section-container">
+        <div class="gallery-images anim-child">
+          <div class="gallery-image"></div>
+          <div class="gallery-image"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 7. TEAM ========== -->
+    <section class="section team" id="team">
+      <div class="section-container">
+        <div class="team-wrap">
+          <div class="team-heading anim-child">
+            <div class="team-heading-left">
+              <span class="tag">ABOUT</span>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: row; gap: 40px; margin-top: -40px; margin-bottom: 60px;" class="anim-child">
+            <div style="flex: 1; min-width: 0;">
+              <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 15px; line-height: 24px; color: #2C1F14; opacity: 0.8; max-width: 446px;">At Lady Jane, we believe estate planning should be purposeful and seamless. That's why we shape plans and strategies that are clear, intuitive, and built for your family's momentum — no confusion, no friction, just thoughtful guidance made to protect and scale.</p>
+            </div>
+            <div style="flex: 1; min-width: 0; padding-left: 40px;">
+              <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 15px; line-height: 24px; color: #2C1F14; opacity: 0.8; max-width: 446px;">Powered by a team of attorneys, planners, and client advocates, we build estate plans where care meets expertise. From seamless consultations to thoughtful follow-through, every element we create keeps your family's vision moving forward.</p>
+            </div>
+          </div>
+          <div class="team-grid anim-child">
+            <div class="team-card">
+              <div class="avatar"></div>
+              <div class="info">
+                <span class="name">Tiana Hercules</span>
+                <span class="role">Lead Estate Attorney</span>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="avatar"></div>
+              <div class="info">
+                <span class="name">Danielle Brooks</span>
+                <span class="role">Trust & Probate Counsel</span>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="avatar"></div>
+              <div class="info">
+                <span class="name">Marcus Avery</span>
+                <span class="role">Succession Planner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 8. TESTIMONIAL ========== -->
+    <section class="section testimonial" id="testimonial">
+      <div class="testimonial-container">
+        <div class="testimonial-quote anim-child">
+          Tiana made estate planning feel like a conversation, not a lecture. She helped us protect our children's future with a plan that finally gave us peace of mind.
+        </div>
+        <div class="testimonial-author anim-child">
+          <div class="avatar"></div>
+          <div class="details">
+            <span class="name">Michael & Renee Johnson</span>
+            <span class="title">Estate Planning Clients</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 9. STATS ========== -->
+    <section class="section about-stats" id="stats">
+      <div class="stats-bar anim-child">
+        <div class="stat-item">
+          <span class="stat-number">300+</span>
+          <span class="stat-label">Families protected</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Years of practice</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">98%</span>
+          <span class="stat-label">Client retention</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">2K+</span>
+          <span class="stat-label">Plans completed</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 9b. TRUSTED BY ========== -->
+    <section class="section trusted-section" id="trusted">
+      <div class="trusted-header anim-child">
+        <div class="trusted-header-text">
+          <span class="tag">TRUSTED BY</span>
+          <h2>Families and professionals who count on us</h2>
+        </div>
+      </div>
+      <div class="trusted-grid anim-child">
+        <div class="trusted-card">
+          <div class="card-front">
+            <span class="card-logo">WealthCounsel</span>
+          </div>
+          <div class="card-overlay">
+            <span class="card-dot"></span>
+            <span class="card-category">NETWORK</span>
+            <p class="card-desc">Certified estate planning network member, supporting families with comprehensive trust strategies.</p>
+          </div>
+        </div>
+        <div class="trusted-card">
+          <div class="card-front">
+            <span class="card-logo">ACTEC</span>
+          </div>
+          <div class="card-overlay">
+            <span class="card-dot"></span>
+            <span class="card-category">FELLOWSHIP</span>
+            <p class="card-desc">Fellow of the American College of Trust and Estate Counsel — recognized for expertise in estate law.</p>
+          </div>
+        </div>
+        <div class="trusted-card">
+          <div class="card-front">
+            <span class="card-logo">NAELA</span>
+          </div>
+          <div class="card-overlay">
+            <span class="card-dot"></span>
+            <span class="card-category">ELDER LAW</span>
+            <p class="card-desc">National Academy of Elder Law Attorneys — advocating for elder care and family protection.</p>
+          </div>
+        </div>
+        <div class="trusted-card">
+          <div class="card-front">
+            <span class="card-logo">CT State Bar</span>
+          </div>
+          <div class="card-overlay">
+            <span class="card-dot"></span>
+            <span class="card-category">CERTIFIED</span>
+            <p class="card-desc">Board Certified Specialist in Estate Planning and Probate Law across Connecticut.</p>
+          </div>
+        </div>
+        <div class="trusted-card">
+          <div class="card-front">
+            <span class="card-logo">Super Lawyers</span>
+          </div>
+          <div class="card-overlay">
+            <span class="card-dot"></span>
+            <span class="card-category">RECOGNITION</span>
+            <p class="card-desc">Rising Star in Estate & Trust Law — five consecutive years of industry recognition.</p>
+          </div>
+        </div>
+        <div class="trusted-card">
+          <div class="card-front">
+            <span class="card-logo">Estate Bar</span>
+          </div>
+          <div class="card-overlay">
+            <span class="card-dot"></span>
+            <span class="card-category">MEMBERSHIP</span>
+            <p class="card-desc">Active member of the Estate Planning Bar Association, advancing standards in trust and probate law.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 10. BRANDED IMAGE ========== -->
+    <section class="section brand-section" id="brand-image">
+      <div class="brand-image-container">
+        <div class="brand-overlay">
+          <span class="sonido">lady jane</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 11. FAQ ========== -->
+    <section class="section faq" id="faq" style="width: 100%; padding: 88px 104px; background: var(--color-grey-84, #D3D8DA); overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: inline-flex;">
+      <div style="width: 100%; max-width: 1520px; position: relative; overflow: hidden; border-radius: 16px;">
+        <div style="position: relative; left: 40px; width: calc(100% - 80px); flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex;">
+          <div class="faq-item" style="align-self: stretch; padding: 24px; background: var(--color-grey-89, #E0E4E5); border-radius: 8px; flex-direction: column; gap: 0px; display: flex; cursor: pointer; overflow: hidden;">
+            <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex;">
+              <div style="color: var(--color-grey-7, #111111); font-size: 15.1px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 24px;">What is estate planning?</div>
+              <svg class="faq-chevron" width="14" height="9" viewBox="0 0 14 9" fill="none" style="transition: transform 0.3s ease;"><path d="M1 1L7 7.5L13 1" stroke="var(--color-grey-7, #111111)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding-top 0.4s ease; padding-top: 0;">
+              <div style="color: var(--color-grey-7, #111111); font-size: 14.6px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 24px; opacity: 0.7;">Estate planning is the process of arranging for the management and distribution of your assets during your lifetime and after death. It includes wills, trusts, powers of attorney, healthcare directives, and guardianship designations.</div>
+            </div>
+          </div>
+          <div class="faq-item" style="align-self: stretch; padding: 24px; background: var(--color-grey-89, #E0E4E5); border-radius: 8px; flex-direction: column; gap: 0px; display: flex; cursor: pointer; overflow: hidden;">
+            <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex;">
+              <div style="color: var(--color-grey-7, #111111); font-size: 15.1px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 24px;">How much does estate planning cost?</div>
+              <svg class="faq-chevron" width="14" height="9" viewBox="0 0 14 9" fill="none" style="transition: transform 0.3s ease;"><path d="M1 1L7 7.5L13 1" stroke="var(--color-grey-7, #111111)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding-top 0.4s ease; padding-top: 0;">
+              <div style="color: var(--color-grey-7, #111111); font-size: 14.6px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 24px; opacity: 0.7;">Costs vary based on the complexity of your situation. A basic will may start at a few hundred dollars, while comprehensive trust-based plans range from $2,000 to $5,000+. We offer transparent pricing with no hidden fees.</div>
+            </div>
+          </div>
+          <div class="faq-item" style="align-self: stretch; padding: 24px; background: var(--color-grey-89, #E0E4E5); border-radius: 8px; flex-direction: column; gap: 0px; display: flex; cursor: pointer; overflow: hidden;">
+            <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex;">
+              <div style="color: var(--color-grey-7, #111111); font-size: 15.1px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 24px;">When should I start planning?</div>
+              <svg class="faq-chevron" width="14" height="9" viewBox="0 0 14 9" fill="none" style="transition: transform 0.3s ease;"><path d="M1 1L7 7.5L13 1" stroke="var(--color-grey-7, #111111)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding-top 0.4s ease; padding-top: 0;">
+              <div style="color: var(--color-grey-7, #111111); font-size: 14.6px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 24px; opacity: 0.7;">The best time to start is now. Whether you're newly married, starting a family, building a business, or entering retirement, having a plan in place gives you and your loved ones peace of mind at every stage.</div>
+            </div>
+          </div>
+          <div class="faq-item" style="align-self: stretch; padding: 24px; background: var(--color-grey-89, #E0E4E5); border-radius: 8px; flex-direction: column; gap: 0px; display: flex; cursor: pointer; overflow: hidden;">
+            <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex;">
+              <div style="color: var(--color-grey-7, #111111); font-size: 15.1px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 24px;">What's the difference between a will and a trust?</div>
+              <svg class="faq-chevron" width="14" height="9" viewBox="0 0 14 9" fill="none" style="transition: transform 0.3s ease;"><path d="M1 1L7 7.5L13 1" stroke="var(--color-grey-7, #111111)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding-top 0.4s ease; padding-top: 0;">
+              <div style="color: var(--color-grey-7, #111111); font-size: 14.6px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 24px; opacity: 0.7;">A will takes effect after death and goes through probate. A trust can take effect immediately, avoids probate, and offers greater privacy and flexibility for managing your assets during life and beyond.</div>
+            </div>
+          </div>
+          <div class="faq-item" style="align-self: stretch; padding: 24px; background: var(--color-grey-89, #E0E4E5); border-radius: 8px; flex-direction: column; gap: 0px; display: flex; cursor: pointer; overflow: hidden; opacity: 0;">
+            <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex;">
+              <div style="color: var(--color-grey-7, #111111); font-size: 15.1px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 24px;">Do I need to update my estate plan?</div>
+              <svg class="faq-chevron" width="14" height="9" viewBox="0 0 14 9" fill="none" style="transition: transform 0.3s ease;"><path d="M1 1L7 7.5L13 1" stroke="var(--color-grey-7, #111111)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding-top 0.4s ease; padding-top: 0;">
+              <div style="color: var(--color-grey-7, #111111); font-size: 14.6px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 24px; opacity: 0.7;">Yes — life changes like marriage, divorce, births, deaths, major purchases, or moves to a new state should trigger a review. We recommend reviewing your plan every 3–5 years at minimum.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 11b. NEWS & INSIGHTS ========== -->
+    <section class="section news" id="news" style="width: 100%; padding-left: 104px; padding-right: 104px; padding-top: 80px; padding-bottom: 80px; background: var(--color-grey-84, #D3D8DA); overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: inline-flex;">
+      <div style="width: 100%; max-width: 1520px; padding-left: 40px; padding-right: 40px; overflow: hidden; border-radius: 16px; flex-direction: column; justify-content: flex-end; align-items: flex-start; display: flex;">
+        <div style="align-self: stretch; flex-direction: column; justify-content: center; align-items: center; gap: 40px; display: flex;">
+          <div style="align-self: stretch; padding-top: 1px; padding-bottom: 1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex;">
+            <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex;">
+              <div style="color: var(--color-grey-7, #111111); font-size: 13.2px; font-family: 'Inter', sans-serif; font-weight: 400; text-transform: uppercase; line-height: 21px;">News &amp; Insights</div>
+              <a href="#" style="color: var(--color-grey-7, #111111); font-size: 13.3px; font-family: 'Inter', sans-serif; font-weight: 400; text-transform: uppercase; line-height: 21px; text-decoration: none;">View All</a>
+            </div>
+            <div style="align-self: stretch; height: 1px; opacity: 0.10; outline: 1.05px var(--color-grey-7, #111111) solid;"></div>
+          </div>
+          <div style="align-self: stretch; justify-content: center; align-items: flex-start; gap: 16px; display: inline-flex;">
+            <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex;">
+              <div style="align-self: stretch; height: 286px; position: relative; background: var(--color-grey-93, #EEEEEE); overflow: hidden; border-radius: 4px;">
+                <img style="width: 100%; height: 100%; object-fit: cover; position: absolute; left: 0; top: 0;" src="https://placehold.co/469x286" alt="Estate planning article" />
+              </div>
+              <div style="align-self: stretch; padding-left: 4px; padding-right: 64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex;">
+                <div style="align-self: stretch; color: var(--color-grey-7, #111111); font-size: 16.6px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 27px;">5 Estate Planning Mistakes That Could Cost Your Family Thousands</div>
+                <div style="align-self: stretch; opacity: 0.80; color: var(--color-grey-7, #111111); font-size: 14.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 24px;">Common oversights in wills and trusts — and how to avoid them before it's too late.</div>
+              </div>
+            </div>
+            <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex;">
+              <div style="align-self: stretch; height: 286px; position: relative; background: var(--color-grey-93, #EEEEEE); overflow: hidden; border-radius: 4px;">
+                <img style="width: 100%; height: 100%; object-fit: cover; position: absolute; left: 0; top: 0;" src="https://placehold.co/469x286" alt="Succession plan article" />
+              </div>
+              <div style="align-self: stretch; padding-left: 4px; padding-right: 64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex;">
+                <div style="align-self: stretch; color: var(--color-grey-7, #111111); font-size: 16.6px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 27px;">Why Every Business Owner Needs a Succession Plan</div>
+                <div style="align-self: stretch; opacity: 0.80; color: var(--color-grey-7, #111111); font-size: 14.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 24px;">Protecting your life's work starts with a clear transition strategy for the next generation.</div>
+              </div>
+            </div>
+            <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex;">
+              <div style="align-self: stretch; height: 286px; position: relative; background: var(--color-grey-93, #EEEEEE); overflow: hidden; border-radius: 4px;">
+                <img style="width: 100%; height: 100%; object-fit: cover; position: absolute; left: 0; top: 0;" src="https://placehold.co/469x286" alt="Trusts article" />
+              </div>
+              <div style="align-self: stretch; padding-left: 4px; padding-right: 64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex;">
+                <div style="align-self: stretch; color: var(--color-grey-7, #111111); font-size: 16.6px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 27px;">Understanding Trusts: Revocable vs. Irrevocable</div>
+                <div style="align-self: stretch; opacity: 0.80; color: var(--color-grey-7, #111111); font-size: 14.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 24px;">A plain-language guide to choosing the right trust structure for your family's needs.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 12. BANNER / CTA ========== -->
+    <section class="section banner" id="banner">
+      <div class="section-container">
+        <div class="banner-wrap anim-child">
+          <div class="banner-text">
+            <h2>Your family's <span class="accent">legacy</span> starts here</h2>
+          </div>
+          <div class="banner-cta">
+            <a href="contact.html" class="pricing-cta-group cta-brown" style="text-decoration: none;">
+              <span class="pricing-cta-main">
+                <span class="pricing-cta-label">Book a Consultation</span>
+                <svg class="pricing-cta-arrow-right" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M3.5 9H14.5M14.5 9L10 4.5M14.5 9L10 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="pricing-cta-circle">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path d="M1 10L10 1M10 1H3M10 1V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer id="footer" style="width: 100%; padding: 15.87px; background: var(--color-grey-84, #D3D8DA); overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: inline-flex;">
+      <div style="align-self: stretch; min-height: 700px; padding-left: 39.67px; padding-right: 39.67px; position: relative; background: var(--color-grey-9, #161616); overflow: hidden; border-radius: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex;">
+        <div style="width: 100%; height: 100%; left: 0; top: 0; position: absolute; opacity: 0.15; overflow: hidden;">
+          <img style="width: 100%; height: 100%; object-fit: cover; opacity: 0.20;" src="https://placehold.co/1716x925" alt="" />
+        </div>
+        <div style="align-self: stretch; padding-top: 55.54px; padding-bottom: 31.74px; flex-direction: column; justify-content: space-between; align-items: flex-start; gap: 80px; display: flex; position: relative; z-index: 1; min-height: 600px;">
+          <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; gap: 79.35px; display: flex;">
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 55.55px; display: flex;">
+              <div style="justify-content: flex-start; align-items: flex-end; gap: 11.9px; display: inline-flex;">
+                <div style="color: var(--color-grey-89, #E0E4E5); font-size: 271.3px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 230.42px;">lady jane</div>
+                <div style="color: var(--color-grey-89, #E0E4E5); font-size: 44.5px; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 59.11px;">life & legacy</div>
+              </div>
+              <div style="align-self: stretch; height: 3.96px; flex-direction: column; justify-content: center; align-items: flex-start; display: flex;">
+                <div style="align-self: stretch; height: 1px; opacity: 0.15; background: var(--color-grey-89, #E0E4E5);"></div>
+              </div>
+            </div>
+            <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex; flex-wrap: wrap; align-content: flex-start;">
+              <div style="flex: 1 1 0; max-width: 433px; padding-right: 63.48px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 25.79px; display: inline-flex;">
+                <div style="align-self: stretch; color: var(--color-grey-84, #D3D8DA); font-size: 15.2px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 23.8px;">Let's protect what matters most — whether you have a plan in mind or just want to learn your options, we'd love to hear from you.</div>
+                <a href="contact.html" class="pricing-cta-group cta-light" style="text-decoration: none;">
+                  <span class="pricing-cta-main">
+                    <span class="pricing-cta-label">Book a 15-min call</span>
+                    <svg class="pricing-cta-arrow-right" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M3.5 9H14.5M14.5 9L10 4.5M14.5 9L10 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <span class="pricing-cta-circle">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                      <path d="M1 10L10 1M10 1H3M10 1V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20.83px; display: inline-flex;">
+                <div style="opacity: 0.60; color: var(--color-grey-93, #EEEEEE); font-size: 11.3px; font-family: 'Inter', sans-serif; font-weight: 500; text-transform: uppercase; line-height: 17.85px; letter-spacing: 0.71px;">Sitemap</div>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 23.8px; display: flex;">
+                  <a href="index.html" style="color: var(--color-grey-84, #D3D8DA); font-size: 13.2px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Home</a>
+                  <a href="about.html" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">About</a>
+                  <a href="services.html" style="color: var(--color-grey-84, #D3D8DA); font-size: 13.1px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Services</a>
+                  <a href="contact.html" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Contact</a>
+                </div>
+              </div>
+              <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20.83px; display: inline-flex;">
+                <div style="opacity: 0.60; color: var(--color-grey-93, #EEEEEE); font-size: 11.7px; font-family: 'Inter', sans-serif; font-weight: 500; text-transform: uppercase; line-height: 17.85px; letter-spacing: 0.71px;">Resources</div>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 23.8px; display: flex;">
+                  <a href="stories.html" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.8px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Stories</a>
+                  <a href="plans.html#faq" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">FAQ</a>
+                  <a href="plans.html" style="color: var(--color-grey-84, #D3D8DA); font-size: 13.4px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Plans</a>
+                  <a href="about.html#news" style="color: var(--color-grey-84, #D3D8DA); font-size: 13.1px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Insights</a>
+                </div>
+              </div>
+              <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20.83px; display: inline-flex;">
+                <div style="opacity: 0.60; color: var(--color-grey-93, #EEEEEE); font-size: 11.7px; font-family: 'Inter', sans-serif; font-weight: 500; text-transform: uppercase; line-height: 17.85px; letter-spacing: 0.71px;">Social</div>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 23.8px; display: flex;">
+                  <a href="#" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.7px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Instagram</a>
+                  <a href="#" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">LinkedIn</a>
+                  <a href="#" style="color: var(--color-grey-84, #D3D8DA); font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Facebook</a>
+                  <a href="#" style="color: var(--color-grey-84, #D3D8DA); font-size: 12.3px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px; text-decoration: none;">Twitter</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex;">
+            <div style="justify-content: center; align-items: center; gap: 15.9px; display: flex;">
+              <div style="justify-content: flex-start; align-items: center; gap: 3.97px; display: flex;">
+                <span style="color: var(--color-grey-84, #D3D8DA); font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px;">Copyright</span>
+                <span style="color: var(--color-grey-84, #D3D8DA); font-size: 13.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px;">&copy;</span>
+              </div>
+              <div style="justify-content: flex-start; align-items: flex-start; gap: 3.96px; display: flex;">
+                <span style="opacity: 0.50; color: var(--color-grey-84, #D3D8DA); font-size: 12.8px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px;">Developed by</span>
+                <span style="color: var(--color-grey-84, #D3D8DA); font-size: 12.6px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px;">Lady Jane</span>
+              </div>
+              <div style="justify-content: flex-start; align-items: flex-start; gap: 3.97px; display: flex;">
+                <span style="opacity: 0.50; color: var(--color-grey-84, #D3D8DA); font-size: 12.8px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px;">Powered by</span>
+                <span style="color: var(--color-grey-84, #D3D8DA); font-size: 12.8px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20.83px;">Recipe Labs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
