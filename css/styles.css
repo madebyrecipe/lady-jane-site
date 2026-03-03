@@ -3656,9 +3656,22 @@ body.menu-open .site-nav {
 
   /* --- Homepage pricing card: now handled by dedicated block above with class selectors --- */
 
-  /* --- Pricing (class-based on plans page) --- */
+  /* --- Pricing section (class-based on plans page) — match about page 48px gap --- */
+  body[data-page="plans"] .pricing {
+    padding: 0 !important;
+    background: #E8E0D8;
+  }
+  body[data-page="plans"] .pricing .section-container {
+    padding: 48px 24px !important;
+    border-radius: 0;
+  }
   .pricing-wrap { gap: 40px; }
-  .pricing-heading h2 { font-size: 24px; line-height: 30px; }
+  .pricing-heading h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
   .pricing-cards { flex-direction: column !important; gap: 16px; }
   .pricing-card {
     width: 100% !important;
@@ -4153,9 +4166,9 @@ body.menu-open .site-nav {
      CONTACT PAGE — mobile overrides for inline Figma styles
      ===================================================================== */
 
-  /* Contact section: override 144px inline padding */
+  /* Contact section: override 144px inline padding — match about page 48px gap */
   #contact {
-    padding: 120px 0 48px !important;
+    padding: 48px 0 !important;
   }
   /* Contact inner container: override 140px inline padding + row layout */
   #contact > div {
@@ -4379,6 +4392,7 @@ body.menu-open .site-nav {
   .services { padding: 0 clamp(24px, 5vw, 80px) !important; }
   .works { padding: 88px clamp(24px, 5vw, 80px); }
   .why-us { padding: 80px clamp(24px, 5vw, 80px); }
+  .pricing { padding: 80px clamp(24px, 5vw, 80px) !important; }
   .logos-section { padding: 80px clamp(24px, 5vw, 80px); }
   .team { padding: 80px clamp(24px, 5vw, 80px); }
   .process-section { padding: 80px clamp(24px, 5vw, 80px); }
@@ -4404,10 +4418,20 @@ body.menu-open .site-nav {
     padding-left: clamp(24px, 5vw, 80px) !important;
     padding-right: clamp(24px, 5vw, 80px) !important;
   }
+  /* Contact section (144px inline padding) — fluid for tablet */
+  section[style*="padding-left: 144px"] {
+    padding-left: clamp(24px, 5vw, 80px) !important;
+    padding-right: clamp(24px, 5vw, 80px) !important;
+  }
+  section[style*="padding-left: 144px"] > div {
+    padding-left: clamp(16px, 3vw, 60px) !important;
+    padding-right: clamp(16px, 3vw, 60px) !important;
+  }
 
   /* Inner container padding scales down */
   .services .section-container,
   .why-us .section-container,
+  .pricing .section-container,
   .process-section .section-container,
   .team .section-container,
   .banner .section-container {
@@ -4623,10 +4647,6 @@ footer#footer,
 
 /* ========== CONTACT PAGE — mobile layout fixes (Figma inline styles) ========== */
 @media (max-width: 809px) {
-  /* Contact section — reduce 200px top padding, 144px side padding */
-  #contact[style*="padding-top: 200px"] {
-    padding: 120px 0 48px !important;
-  }
   /* Inner container — stack columns, remove 163px gap, remove nested padding */
   #contact div[style*="gap: 163px"] {
     flex-direction: column !important;
@@ -4634,10 +4654,11 @@ footer#footer,
     padding-left: 24px !important;
     padding-right: 24px !important;
   }
-  /* Heading — clamp font size */
+  /* Heading — match about page pattern (36px) */
   #contact div[style*="font-size: 73.8px"] {
-    font-size: 40px !important;
+    font-size: 36px !important;
     line-height: 1.1 !important;
+    letter-spacing: -0.03em !important;
   }
   /* Email/Phone row — stack */
   #contact div[style*="gap: 63.48px"] {
@@ -4667,9 +4688,9 @@ footer#footer,
 
 /* ========== BLOG PAGE — mobile layout fixes (Figma inline styles) ========== */
 @media (max-width: 809px) {
-  /* Blog section — reduce side padding at fluid breakpoint */
+  /* Blog section — match about page 48px post-hero gap */
   .blog-grid-section {
-    padding: 60px 24px 48px !important;
+    padding: 48px 0 !important;
   }
   .blog-grid-section > div {
     padding-left: 24px !important;
