@@ -5,6 +5,7 @@
   --color-grey-84: #E8E0D8;
   --color-grey-84-4: rgba(232, 224, 216, 0.04);
   --color-grey-89: #EDE8E2;
+  --color-grey-93: #F5F0EB;
 }
 
 /* ========== 1. RESET & BASE ========== */
@@ -2977,7 +2978,7 @@ body.menu-open .site-nav {
     width: 100% !important;
     max-width: 480px !important;
     margin: 0 auto !important;
-    background: #EEEEEE !important;
+    background: var(--color-grey-93, #F5F0EB) !important;
     border: none !important;
     overflow: visible !important;
   }
@@ -3527,7 +3528,7 @@ body.menu-open .site-nav {
     min-height: 520px;
     padding: 32px 24px !important;
     border-radius: 16px !important;
-    background: #FFFFFF !important;
+    background: var(--color-grey-93, #F5F0EB) !important;
     box-shadow: none !important;
     box-sizing: border-box !important;
     overflow: visible !important;
@@ -4207,6 +4208,19 @@ footer#footer,
 .trusted-section--home .trusted-card,
 .logo-item {
   background: #EDE8E2 !important;
+}
+
+/* ========== SAFETY NET — catch ALL Figma inline var() backgrounds on mobile ========== */
+@media (max-width: 809px) {
+  [style*="background: var(--color-grey-84"] {
+    background: #E8E0D8 !important;
+  }
+  [style*="background: var(--color-grey-93"] {
+    background: var(--color-grey-93, #F5F0EB) !important;
+  }
+  [style*="background: var(--color-grey-89"] {
+    background: var(--color-grey-89, #EDE8E2) !important;
+  }
 }
 
 /* ========== UTILITIES ========== */
