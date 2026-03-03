@@ -3676,6 +3676,7 @@ body.menu-open .site-nav {
   }
   .news-card-img img {
     border-radius: 12px !important;
+    object-position: top center !important;
   }
   .news-card-text {
     padding-right: 0 !important;
