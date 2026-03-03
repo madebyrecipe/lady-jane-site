@@ -4500,6 +4500,95 @@ footer#footer,
   }
 }
 
+/* ========== DISABLE SCROLL PRE-ANIMATION ON MOBILE (all pages) ========== */
+/* JS animation sets .section opacity to ~0.12 until 8% is visible, which creates
+   blank gaps on tall sections (works ~4500px, services ~1700px, team ~1800px).
+   On mobile, disable entirely — instant visibility, no scroll-gated reveal. */
+@media (max-width: 809px) {
+  .section {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .section .anim-child {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  /* More compact landscape work-cards on mobile — reduces total scroll length */
+  .work-card .wrap {
+    aspect-ratio: 3 / 2 !important;
+    min-height: unset !important;
+  }
+}
+
+/* ========== ABOUT PAGE — mobile layout fixes ========== */
+@media (max-width: 809px) {
+  /* Value cards section — override 104px inline padding */
+  .services[style*="padding: 0 104px"] {
+    padding: 0 0 48px !important;
+  }
+  .services[style*="padding: 0 104px"] > div {
+    padding: 0 24px !important;
+  }
+  /* Service card images — auto height instead of fixed 386px */
+  .services .service-card .img-wrap[style*="height: 386px"] {
+    height: auto !important;
+    aspect-ratio: 4/3 !important;
+  }
+
+  /* Team section — stack 2-column copy to single column */
+  #team div[style*="flex-direction: row"][style*="gap: 40px"] {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  #team div[style*="padding-left: 40px"] {
+    padding-left: 0 !important;
+  }
+  #team div[style*="max-width: 446px"] {
+    max-width: 100% !important;
+  }
+
+  /* FAQ section on about page — override 104px inline padding */
+  .faq[style*="padding: 88px 104px"] {
+    padding: 48px 0 !important;
+  }
+  .faq[style*="padding: 88px 104px"] > div {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  .faq[style*="padding: 88px 104px"] div[style*="left: 40px"] {
+    left: 0 !important;
+    width: 100% !important;
+  }
+
+  /* News section on about page — override 104px inline padding */
+  .news[style*="padding-left: 104px"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .news[style*="padding-left: 104px"] > div {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  /* News cards — stack vertically */
+  .news div[style*="gap: 16px"][style*="inline-flex"] {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .news div[style*="flex: 1 1 0"] {
+    flex: none !important;
+    width: 100% !important;
+  }
+  .news div[style*="height: 286px"] {
+    height: auto !important;
+    aspect-ratio: 16/9;
+  }
+  .news div[style*="padding-right: 64px"] {
+    padding-right: 4px !important;
+  }
+}
+
 /* ========== UTILITIES ========== */
 .accent { color: #81D8D0; }
 .text-muted { opacity: 0.6; }
