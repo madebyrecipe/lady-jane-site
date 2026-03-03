@@ -469,6 +469,40 @@
   requestAnimationFrame(update);
 })();
 
+/* ── Trusted Card Tap Toggle (mobile + desktop click) ── */
+(function () {
+  var cards = document.querySelectorAll('.trusted-card');
+  if (!cards.length) return;
+
+  cards.forEach(function (card) {
+    card.addEventListener('click', function () {
+      var wasActive = card.classList.contains('is-active');
+
+      // Close all sibling cards in the same grid
+      var grid = card.closest('.trusted-grid');
+      if (grid) {
+        grid.querySelectorAll('.trusted-card').forEach(function (other) {
+          other.classList.remove('is-active');
+        });
+      }
+
+      // Toggle clicked card (open if it was closed)
+      if (!wasActive) {
+        card.classList.add('is-active');
+      }
+    });
+  });
+
+  // Close active card when tapping outside
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.trusted-card')) {
+      document.querySelectorAll('.trusted-card.is-active').forEach(function (c) {
+        c.classList.remove('is-active');
+      });
+    }
+  });
+})();
+
 /* ── FAQ Accordion + Sliding Highlight ── */
 (function () {
   var faqList = document.querySelector('.faq-list');
