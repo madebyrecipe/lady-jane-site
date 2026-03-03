@@ -2,8 +2,14 @@
 
 /* Override Figma's cool-grey palette with warm brown */
 :root {
+  --color-grey-7: #1A1412;
+  --color-grey-9: #1E1814;
+  --color-grey-20: #362E28;
+  --color-grey-63: #A39484;
+  --color-grey-64: #A69787;
   --color-grey-84: #E8E0D8;
   --color-grey-84-4: rgba(232, 224, 216, 0.04);
+  --color-grey-87: #DED5CB;
   --color-grey-89: #EDE8E2;
   --color-grey-93: #F5F0EB;
 }
@@ -4586,6 +4592,110 @@ footer#footer,
   }
   .news div[style*="padding-right: 64px"] {
     padding-right: 4px !important;
+  }
+}
+
+/* ========== CONTACT PAGE — mobile layout fixes (Figma inline styles) ========== */
+@media (max-width: 809px) {
+  /* Contact section — reduce 200px top padding, 144px side padding */
+  #contact[style*="padding-top: 200px"] {
+    padding: 120px 0 48px !important;
+  }
+  /* Inner container — stack columns, remove 163px gap, remove nested padding */
+  #contact div[style*="gap: 163px"] {
+    flex-direction: column !important;
+    gap: 40px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  /* Heading — clamp font size */
+  #contact div[style*="font-size: 73.8px"] {
+    font-size: 40px !important;
+    line-height: 1.1 !important;
+  }
+  /* Email/Phone row — stack */
+  #contact div[style*="gap: 63.48px"] {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  /* Name + Email side-by-side — stack */
+  #contact div[style*="gap: 31.74px"][style*="inline-flex"] {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  /* FAQ accordion section on contact page — reduce 104px padding, unlock fixed height */
+  section#faq[style*="padding-left: 104px"] {
+    padding: 48px 0 !important;
+  }
+  section#faq div[style*="height: 397px"] {
+    height: auto !important;
+  }
+  section#faq div[style*="width: 1440px"] {
+    width: 100% !important;
+    position: relative !important;
+    left: 0 !important;
+    padding: 0 24px !important;
+  }
+}
+
+/* ========== BLOG PAGE — mobile layout fixes (Figma inline styles) ========== */
+@media (max-width: 809px) {
+  /* Blog section — reduce 180px top padding, 104px side padding */
+  .section[style*="padding-top: 180px"][style*="padding-left: 104px"] {
+    padding: 120px 0 48px !important;
+  }
+  .section[style*="padding-top: 180px"][style*="padding-left: 104px"] > div {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  /* Blog title — clamp font */
+  .section[style*="padding-top: 180px"] div[style*="font-size: 60.5px"] {
+    font-size: 36px !important;
+    line-height: 1.15 !important;
+  }
+  /* Title row — stack, hide avatars */
+  .section[style*="padding-top: 180px"] div[style*="justify-content: space-between"][style*="inline-flex"] {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+  .section[style*="padding-top: 180px"] div[style*="padding-left: 40px"][style*="align-items: flex-end"] {
+    display: none !important;
+  }
+  /* Blog grid rows — stack cards vertically */
+  .section[style*="padding-top: 180px"] div[style*="flex: 1 1 0"][style*="padding: 24px"] {
+    flex: none !important;
+    width: 100% !important;
+  }
+  .section[style*="padding-top: 180px"] div[style*="max-width: 50%"] {
+    max-width: 100% !important;
+    flex: none !important;
+    width: 100% !important;
+  }
+  /* Card rows — stack */
+  .section[style*="padding-top: 180px"] div[style*="align-self: stretch"][style*="display: inline-flex"]:not([style*="gap: 7.94px"]) {
+    flex-direction: column !important;
+  }
+  /* Card image — auto height */
+  .section[style*="padding-top: 180px"] div[style*="height: 286px"] {
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* ========== PLANS PAGE — FAQ mobile fixes (Figma inline styles) ========== */
+@media (max-width: 809px) {
+  /* Plans page FAQ — override 88px 104px inline padding */
+  .faq[style*="padding: 88px 104px"] {
+    padding: 48px 0 !important;
+  }
+  .faq[style*="padding: 88px 104px"] > div {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  .faq[style*="padding: 88px 104px"] div[style*="left: 40px"] {
+    left: 0 !important;
+    width: 100% !important;
   }
 }
 
