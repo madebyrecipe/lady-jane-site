@@ -3687,6 +3687,8 @@ body.menu-open .site-nav {
   }
   .news-card-img img {
     border-radius: 12px !important;
+  }
+  .news-card:nth-child(3) .news-card-img img {
     object-position: top center !important;
   }
   .news-card-text {
