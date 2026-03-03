@@ -4054,12 +4054,30 @@ body.menu-open .site-nav {
   }
   .footer-bottom {
     flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 12px !important;
+    align-items: center !important;
+    gap: 16px !important;
+    text-align: center !important;
   }
   .footer-bottom > div {
     flex-wrap: wrap !important;
     gap: 8px !important;
+    justify-content: center !important;
+  }
+  .footer-bottom .footer-social {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+    padding-top: 4px !important;
+  }
+  .footer-bottom .footer-social a {
+    width: 40px !important;
+    height: 40px !important;
+    color: rgba(237, 232, 226, 0.6) !important;
+  }
+  .footer-bottom .footer-social svg {
+    width: 20px !important;
+    height: 20px !important;
   }
 
   /* CTA morph button — keep default (no circle merge, just show both) */
