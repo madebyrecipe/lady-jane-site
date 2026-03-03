@@ -4121,11 +4121,19 @@ body.menu-open .site-nav {
   #contact {
     padding: 120px 0 48px !important;
   }
-  /* Contact inner container: override 140px inline padding */
+  /* Contact inner container: override 140px inline padding + row layout */
   #contact > div {
     padding-left: 24px !important;
     padding-right: 24px !important;
     max-width: 100% !important;
+    flex-direction: column !important;
+    gap: 48px !important;
+  }
+  /* Contact info + form columns: full width */
+  #contact > div > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-shrink: 1 !important;
   }
   /* Contact heading: 73.8px → responsive */
   #contact div[style*="font-size: 73.8px"] {
@@ -4139,11 +4147,22 @@ body.menu-open .site-nav {
     line-height: 1.5 !important;
     max-width: 100% !important;
   }
-  /* Two-column layout → stack on mobile */
+  /* Email / Phone row: stack on mobile */
+  #contact div[style*="gap: 63.48px"][style*="inline-flex"] {
+    flex-direction: column !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+  /* Two-column form fields → stack on mobile */
   #contact div[style*="gap: 31.74px"][style*="inline-flex"] {
     flex-direction: column !important;
     gap: 0 !important;
     width: 100% !important;
+  }
+  /* All inline-flex children inside contact: full width + wrap */
+  #contact div[style*="inline-flex"] {
+    max-width: 100% !important;
+    flex-wrap: wrap !important;
   }
   /* Form fields: ensure full width */
   #contact div[style*="flex: 1 1 0"] {
