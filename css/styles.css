@@ -4694,18 +4694,9 @@ footer#footer,
     gap: 24px !important;
   }
 
-  /* FAQ accordion section on contact page — reduce 104px padding, unlock fixed height */
+  /* FAQ accordion section on contact page — reduce 104px padding */
   section#faq[style*="padding-left: 104px"] {
     padding: 48px 0 !important;
-  }
-  section#faq div[style*="height: 397px"] {
-    height: auto !important;
-  }
-  section#faq div[style*="width: 1440px"] {
-    width: 100% !important;
-    position: relative !important;
-    left: 0 !important;
-    padding: 0 24px !important;
   }
 }
 
