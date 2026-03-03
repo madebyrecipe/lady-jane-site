@@ -548,6 +548,31 @@ body.menu-open .site-nav {
   z-index: -1;
 }
 
+/* ===== PAGE-LEVEL HERO (shorter inner-page variant) ===== */
+.hero.hero--page {
+  min-height: 550px;
+}
+.hero--page .hero-container {
+  min-height: 518px;
+}
+.hero--page .hero-wrapper {
+  min-height: 446px;
+  gap: 40px;
+}
+.hero--page .hero-banner {
+  margin-top: 40px;
+}
+.hero--page .hero-heading .sonido {
+  font-size: clamp(60px, 12vw, 165px);
+  line-height: 0.85;
+}
+.hero--page .hero-heading .studio {
+  font-size: clamp(20px, 2.5vw, 30px);
+}
+.hero--page .hero-bottom {
+  min-height: auto;
+}
+
 .hero-bottom {
   margin: 0 auto;
   width: 100%; max-width: 1616px; height: auto; min-height: 334px;
@@ -3143,6 +3168,11 @@ body.menu-open .site-nav {
     max-width: 280px;
     margin-bottom: 32px;
   }
+  /* Page-level hero — mobile */
+  .hero.hero--page { min-height: 400px; }
+  .hero--page .hero-container { min-height: 370px; }
+  .hero--page .hero-wrapper { min-height: auto; }
+  .hero--page .hero-heading .sonido { font-size: clamp(48px, 14vw, 90px); }
   .hero-container .nav { padding: 0 4px; }
   .hero-3d-hint { display: none; }
   .hero-container::before {
@@ -4414,6 +4444,10 @@ body.menu-open .site-nav {
   .hero-heading-wrapper {
     width: 100%;
     max-width: 100%;
+  }
+  /* Page-level hero — fluid */
+  .hero--page .hero-heading .sonido {
+    font-size: clamp(80px, 12vw, 165px);
   }
 
   /* Footer expanded heading scales */

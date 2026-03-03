@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=20260303b" />
+  <link rel="stylesheet" href="css/styles.css?v=20260303d" />
 </head>
 <body data-page="stories">
   <!-- ========== SITE NAV ========== -->
@@ -73,48 +73,35 @@
   </div>
 
   <div class="page">
-    <!-- ========== HERO CONTAINER ========== -->
-    <section style="width: 100%; padding-top: 16px; padding-bottom: 56px; padding-left: 40px; padding-right: 40px; background: var(--color-grey-84, #D3D8DA); overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: inline-flex;">
-      <div style="width: 100%; max-width: 1696px; height: 428px; position: relative; border-radius: 16px; overflow: hidden;">
-        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1696&h=428&fit=crop&crop=center" alt="Estate planning consultation" style="width: 100%; height: 100%; position: absolute; left: 0; top: 0; border-radius: 16px; object-fit: cover;" />
-        <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.35); border-radius: 16px; pointer-events: none;"></div>
-      </div>
-    </section>
-
-    <!-- ========== SECTION - SERVICES (Work Heading) ========== -->
-    <section class="section" style="width: 100%; padding-left: 104px; padding-right: 104px; background: var(--color-grey-84, #D3D8DA); overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: inline-flex;">
-      <div style="width: 100%; max-width: 1520px; padding: 40px; overflow: hidden; border-radius: 16px; flex-direction: column; justify-content: flex-end; align-items: flex-start; display: flex;">
-        <div style="align-self: stretch; justify-content: space-between; align-items: flex-end; display: inline-flex;">
-
-          <!-- Work Heading -->
-          <div style="width: 689px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex;">
-            <div style="width: 689px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex;">
-              <div style="align-self: stretch; color: var(--color-grey-7, #111111); font-size: 61.9px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 70.4px;">Families deserve guidance<br/>they can trust</div>
-            </div>
-
-            <!-- Work Info -->
-            <div style="justify-content: flex-start; align-items: center; gap: 21px; display: inline-flex;">
-              <div style="padding: 10px; justify-content: center; align-items: center; gap: 10px; display: flex;">
-                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.2" width="6" height="6" rx="3" fill="var(--color-grey-7, #111111)"/>
-                </svg>
-                <div style="color: var(--color-grey-7, #111111); font-size: 11.6px; font-family: 'Inter', sans-serif; font-weight: 500; text-transform: uppercase; line-height: 18px; letter-spacing: 0.72px;">5 MINUTES READ</div>
+    <!-- ========== HERO HEADER ========== -->
+    <section class="section hero hero--page" id="hero">
+      <div class="hero-container">
+        <img class="hero-bg-video" src="assets/images/Site media/pexels-askar-abayev-5638617.jpg" alt="" />
+        <div class="hero-navbar"></div>
+        <div class="hero-wrapper">
+          <div class="hero-banner anim-child">
+            <div class="hero-banner-left">
+              <div class="hero-banner-wrap">
+                <div class="copyright">&copy;</div>
+                <div class="hero-banner-content">
+                  <div class="line1">Families we've guided</div>
+                  <div class="line2">Real stories from families who trusted Lady Jane to help them plan, protect, and pass on what matters most.</div>
+                </div>
               </div>
-              <div style="color: var(--color-grey-7, #111111); font-size: 11.6px; font-family: 'Inter', sans-serif; font-weight: 500; text-transform: uppercase; line-height: 18px; letter-spacing: 0.72px;">Apr 12, 2025</div>
+            </div>
+            <div class="hero-banner-right">
+              <div class="img-wrap"><img src="assets/images/Site media/pexels-ekaterina-bolovtsova-6077123.jpg" alt="Attorney guiding a family through estate planning" style="width:100%;height:100%;object-fit:cover;" /></div>
             </div>
           </div>
-
-          <!-- Work Publisher -->
-          <div style="justify-content: flex-start; align-items: center; gap: 16px; display: flex;">
-            <div style="width: 68px; height: 68px; position: relative; overflow: hidden; border-radius: 16px;">
-              <img style="width: 68px; height: 68px; left: 0; top: 0; position: absolute; border-radius: 16px; object-fit: cover;" src="assets/images/Site media/pexels-khaliifah-hussein-1904370898-34078745.jpg" alt="Author" />
-            </div>
-            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex;">
-              <div style="opacity: 0.60; color: var(--color-grey-7, #111111); font-size: 12.8px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 21px;">Guiding families through legacy planning</div>
-              <div style="color: var(--color-grey-7, #111111); font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 500; line-height: 21px;">Tiana Hercules</div>
+          <div class="hero-bottom anim-child">
+            <div class="hero-heading-wrapper">
+              <div class="hero-heading">
+                <span class="sonido">our work</span>
+                <span class="studio">& stories</span>
+              </div>
+              <p class="hero-mobile-desc">Families deserve guidance they can trust — see how we've helped.</p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
