@@ -4188,6 +4188,27 @@ body.menu-open .site-nav {
   }
 }
 
+/* ========== FORCE WARM BROWN — overrides Figma inline styles ========== */
+.testimonials,
+.pricing,
+.faq,
+section.news,
+footer#footer,
+.works,
+.why-us,
+.trusted-section,
+.trusted-section--home,
+.logos-section {
+  background: #E8E0D8 !important;
+}
+
+.faq-item,
+.trusted-card,
+.trusted-section--home .trusted-card,
+.logo-item {
+  background: #EDE8E2 !important;
+}
+
 /* ========== UTILITIES ========== */
 .accent { color: #81D8D0; }
 .text-muted { opacity: 0.6; }
