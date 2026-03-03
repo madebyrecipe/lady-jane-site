@@ -3782,16 +3782,20 @@ body[data-page="services"] .pricing-heading .tag {
   /* === NEWS & INSIGHTS — class-based overrides === */
   section.news {
     padding: 0 !important;
+    overflow: visible !important;
   }
   .news-inner {
     padding: 48px 24px !important;
     border-radius: 0 !important;
+    overflow: visible !important;
   }
   .news-content {
     gap: 32px !important;
   }
   .news-header {
     gap: 12px !important;
+    padding-bottom: 0 !important;
+    overflow: visible !important;
   }
   .news-card-grid {
     flex-direction: column !important;
