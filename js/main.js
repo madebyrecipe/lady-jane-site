@@ -523,3 +523,44 @@
     });
   });
 })();
+
+/* ── Stats Count-Up Animation ── */
+(function () {
+  var stats = document.querySelectorAll('.stat-number[data-target]');
+  if (!stats.length) return;
+
+  var animated = false;
+
+  function countUp(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10);
+    var suffix = el.getAttribute('data-suffix') || '';
+    var duration = 1800;
+    var start = 0;
+    var startTime = null;
+
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      var progress = Math.min((timestamp - startTime) / duration, 1);
+      // Ease-out cubic
+      var ease = 1 - Math.pow(1 - progress, 3);
+      var current = Math.round(ease * target);
+      el.textContent = current + suffix;
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      }
+    }
+    requestAnimationFrame(step);
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting && !animated) {
+        animated = true;
+        stats.forEach(function (el) { countUp(el); });
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(stats[0].closest('.stats-bar') || stats[0]);
+})();
