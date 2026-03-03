@@ -4247,34 +4247,32 @@ body.menu-open .site-nav {
      ===================================================================== */
 
   /* Blog section: override inline padding for mobile */
-  section[style*="padding-left: 104px"][style*="padding-top: 80px"] {
+  .blog-grid-section {
     padding: 48px 0 !important;
   }
-  /* Blog wrapper: override 40px inner padding */
-  section[style*="padding-left: 104px"][style*="padding-top: 80px"] > div {
+  .blog-grid-section > div {
     padding-left: 24px !important;
     padding-right: 24px !important;
     max-width: 100% !important;
   }
   /* Blog card rows: stack vertically */
-  section[style*="padding-left: 104px"][style*="padding-top: 80px"] div[style*="display: inline-flex"] {
+  .blog-grid-section div[style*="display: inline-flex"] {
     flex-direction: column !important;
     max-width: 100% !important;
-    flex-wrap: wrap !important;
   }
   /* Blog card grids: force each card full width */
-  section[style*="padding-left: 104px"][style*="padding-top: 80px"] div[style*="flex: 1 1 0"] {
+  .blog-grid-section div[style*="flex: 1 1 0"] {
     flex: none !important;
     width: 100% !important;
     max-width: 100% !important;
   }
   /* Card image heights: responsive */
-  section[style*="padding-left: 104px"][style*="padding-top: 80px"] div[style*="height: 286px"] {
+  .blog-grid-section div[style*="height: 286px"] {
     height: auto !important;
     aspect-ratio: 16/9;
   }
   /* Cards max-width: 50% → 100% */
-  section[style*="padding-left: 104px"][style*="padding-top: 80px"] div[style*="max-width: 50%"] {
+  .blog-grid-section div[style*="max-width: 50%"] {
     max-width: 100% !important;
   }
 
@@ -4670,29 +4668,29 @@ footer#footer,
 /* ========== BLOG PAGE — mobile layout fixes (Figma inline styles) ========== */
 @media (max-width: 809px) {
   /* Blog section — reduce side padding at fluid breakpoint */
-  .section[style*="padding-top: 80px"][style*="padding-left: 104px"] {
+  .blog-grid-section {
     padding: 60px 24px 48px !important;
   }
-  .section[style*="padding-top: 80px"][style*="padding-left: 104px"] > div {
+  .blog-grid-section > div {
     padding-left: 24px !important;
     padding-right: 24px !important;
   }
   /* Blog grid rows — stack cards vertically */
-  .section[style*="padding-top: 80px"][style*="padding-left: 104px"] div[style*="flex: 1 1 0"][style*="padding: 24px"] {
+  .blog-grid-section div[style*="flex: 1 1 0"] {
     flex: none !important;
     width: 100% !important;
   }
-  .section[style*="padding-top: 80px"][style*="padding-left: 104px"] div[style*="max-width: 50%"] {
+  .blog-grid-section div[style*="max-width: 50%"] {
     max-width: 100% !important;
     flex: none !important;
     width: 100% !important;
   }
   /* Card rows — stack */
-  .section[style*="padding-top: 80px"][style*="padding-left: 104px"] div[style*="align-self: stretch"][style*="display: inline-flex"]:not([style*="gap: 7.94px"]) {
+  .blog-grid-section div[style*="display: inline-flex"] {
     flex-direction: column !important;
   }
   /* Card image — auto height */
-  .section[style*="padding-top: 80px"][style*="padding-left: 104px"] div[style*="height: 286px"] {
+  .blog-grid-section div[style*="height: 286px"] {
     height: auto !important;
     aspect-ratio: 16 / 9;
   }
