@@ -3235,7 +3235,7 @@ body.menu-open .site-nav {
   }
 
   /* --- Service Detail (services page) --- */
-  .service-detail { flex-direction: column; gap: 24px; padding: 32px 0; }
+  .service-detail { flex-direction: column !important; gap: 24px; padding: 32px 0; }
   .service-detail .detail-image { width: 100%; min-height: 240px; }
   .service-detail .detail-content { width: 100%; }
 
