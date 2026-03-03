@@ -2593,9 +2593,9 @@ body.menu-open .site-nav {
   opacity: 1;
 }
 
-/* Home page variant — matches Figma 6-col layout on #D3D8DA */
+/* Home page variant — warm brown to match site palette */
 .trusted-section--home {
-  background: #D3D8DA;
+  background: #E8E0D8;
   padding: 80px 104px;
 }
 .trusted-section--home .trusted-grid {
@@ -2604,11 +2604,11 @@ body.menu-open .site-nav {
   grid-template-columns: repeat(4, 1fr);
 }
 .trusted-section--home .trusted-card {
-  background: #E0E4E5;
+  background: #EDE8E2;
   height: 211px;
 }
 .trusted-section--home .trusted-card .card-overlay {
-  background: #E0E4E5;
+  background: #EDE8E2;
 }
 
 /* ========== 26. FOOTER SOCIAL ICONS ========== */
@@ -3694,7 +3694,7 @@ body.menu-open .site-nav {
   /* --- Trusted / Credentials grid (mobile) --- */
   .trusted-section {
     padding: 0 !important;
-    background: #D3D8DA;
+    background: #E8E0D8;
   }
   .trusted-section--home {
     padding: 0 !important;
@@ -3710,7 +3710,7 @@ body.menu-open .site-nav {
     height: auto !important;
     aspect-ratio: 1 / 1;
     border-radius: 2rem;
-    background: #E0E2E1;
+    background: #EDE8E2;
     border: 1px solid rgba(0, 0, 0, 0.05);
   }
   .trusted-card .card-front {
