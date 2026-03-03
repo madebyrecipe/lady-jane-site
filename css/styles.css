@@ -1548,6 +1548,15 @@ body.menu-open .site-nav {
 .pricing-card.featured .btn-pricing { background: #EDE8E2; color: #2C1F14; }
 .pricing-card.featured .btn-pricing:hover { background: #FFFFFF; }
 
+/* Service card title (services page using pricing-card layout) */
+.service-card-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; font-size: 24px; line-height: 30px;
+  color: #2C1F14; letter-spacing: -0.02em;
+  margin: 0;
+}
+.pricing-card.featured .service-card-title { color: #EDE8E2; }
+
 /* ========== 12B. PRICING CTA MORPH ANIMATION ========== */
 .pricing-cta-group {
   display: inline-flex;
@@ -3699,6 +3708,10 @@ body.menu-open .site-nav {
     padding: 14px 20px;
     font-size: 13px;
     border-radius: 12px;
+  }
+  .service-card-title {
+    font-size: 20px;
+    line-height: 26px;
   }
 
   /* === FAQ — class-based overrides === */
