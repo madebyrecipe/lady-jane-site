@@ -2517,6 +2517,17 @@ body[data-page="services"] .pricing-heading .tag {
 .news-card-img img {
   border-radius: 12px !important;
 }
+/* News subtitle */
+.news-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #2C1F14;
+  margin: 8px 0 0;
+}
+
 /* News divider — gradient fade instead of thin outline */
 .news-divider {
   height: 1px !important;
@@ -3756,6 +3767,11 @@ body[data-page="services"] .pricing-heading .tag {
   }
   .faq .faq-item {
     padding: 20px 16px !important;
+  }
+
+  .news-subtitle {
+    font-size: 24px;
+    line-height: 1.25;
   }
 
   /* --- News section (class-based on blog page) --- */
