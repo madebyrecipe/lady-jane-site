@@ -1548,6 +1548,12 @@ body.menu-open .site-nav {
 .pricing-card.featured .btn-pricing { background: #EDE8E2; color: #2C1F14; }
 .pricing-card.featured .btn-pricing:hover { background: #FFFFFF; }
 
+/* Services page heading */
+body[data-page="services"] .pricing-heading .tag {
+  font-size: 29.9px; line-height: 35px;
+  letter-spacing: -0.02em;
+}
+
 /* Service card title (services page using pricing-card layout) */
 .service-card-title {
   font-family: 'Inter', sans-serif;
@@ -3712,6 +3718,10 @@ body.menu-open .site-nav {
   .service-card-title {
     font-size: 20px;
     line-height: 26px;
+  }
+  body[data-page="services"] .pricing-heading .tag {
+    font-size: 24px;
+    line-height: 30px;
   }
 
   /* === FAQ — class-based overrides === */
