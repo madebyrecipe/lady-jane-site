@@ -1,5 +1,12 @@
 /* ========== Lady Jane Life & Legacy Planning — Global Stylesheet ========== */
 
+/* Override Figma's cool-grey palette with warm brown */
+:root {
+  --color-grey-84: #E8E0D8;
+  --color-grey-84-4: rgba(232, 224, 216, 0.04);
+  --color-grey-89: #EDE8E2;
+}
+
 /* ========== 1. RESET & BASE ========== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; overflow-x: clip; }
