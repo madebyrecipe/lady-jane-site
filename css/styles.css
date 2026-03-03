@@ -2862,6 +2862,17 @@ body.menu-open .site-nav {
       0 12px 24px -8px rgba(0, 0, 0, 0.3),
       inset 0 1px 0 rgba(255, 255, 255, 0.06);
   }
+  .text-banner-video {
+    min-width: 0 !important;
+    min-height: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    object-fit: cover;
+    object-position: center 40%;
+  }
   .banner-letter {
     font-size: clamp(55px, 17vw, 280px);
   }
