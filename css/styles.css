@@ -4112,6 +4112,216 @@ body.menu-open .site-nav {
   .pricing-cta-group { gap: 8px; }
   .pricing-cta-main { height: 52px; padding: 0 20px; border-radius: 10px; }
   .pricing-cta-circle { width: 52px; height: 52px; }
+
+  /* =====================================================================
+     CONTACT PAGE — mobile overrides for inline Figma styles
+     ===================================================================== */
+
+  /* Contact section: override 144px inline padding */
+  #contact {
+    padding: 120px 0 48px !important;
+  }
+  /* Contact inner container: override 140px inline padding */
+  #contact > div {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    max-width: 100% !important;
+  }
+  /* Contact heading: 73.8px → responsive */
+  #contact div[style*="font-size: 73.8px"] {
+    font-size: 36px !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.03em !important;
+  }
+  /* Contact subtitle text */
+  #contact div[style*="font-size: 19.8px"] {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    max-width: 100% !important;
+  }
+  /* Two-column layout → stack on mobile */
+  #contact div[style*="gap: 31.74px"][style*="inline-flex"] {
+    flex-direction: column !important;
+    gap: 0 !important;
+    width: 100% !important;
+  }
+  /* Form fields: ensure full width */
+  #contact div[style*="flex: 1 1 0"] {
+    flex: none !important;
+    width: 100% !important;
+  }
+  #contact input,
+  #contact textarea {
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+  /* Submit button: full width on mobile */
+  #contact div[style*="padding: 16.9px"] {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  /* Contact FAQ section: override 104px inline padding */
+  #faq {
+    padding: 48px 0 !important;
+  }
+  #faq > div {
+    height: auto !important;
+    max-width: 100% !important;
+    position: relative !important;
+  }
+  /* FAQ inner — kill absolute positioning & fixed 1440px width */
+  #faq > div > div {
+    position: relative !important;
+    width: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    padding: 0 24px !important;
+  }
+  /* FAQ heading on contact page */
+  #faq div[style*="font-size: 61.9px"],
+  #faq div[style*="font-size: 60.5px"] {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  /* =====================================================================
+     BLOG PAGE — mobile overrides for inline Figma styles
+     ===================================================================== */
+
+  /* Blog section: override 180px top padding + 104px side padding */
+  section[style*="padding-top: 180px"][style*="padding-left: 104px"] {
+    padding: 120px 0 48px !important;
+  }
+  /* Blog wrapper: override 40px inner padding */
+  section[style*="padding-top: 180px"] > div {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    max-width: 100% !important;
+  }
+  /* Blog heading: 60.5px → responsive */
+  section[style*="padding-top: 180px"] div[style*="font-size: 60.5px"] {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+  }
+  /* Blog card grids: force column layout */
+  section[style*="padding-top: 180px"] div[style*="inline-flex"][style*="gap:"] > div[style*="flex: 1 1 0"] {
+    flex: none !important;
+    width: 100% !important;
+  }
+  /* Card grid rows: stack vertically */
+  section[style*="padding-top: 180px"] > div > div > div[style*="display: inline-flex"] {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  /* Card image heights: responsive */
+  section[style*="padding-top: 180px"] div[style*="height: 286px"] {
+    height: auto !important;
+    aspect-ratio: 16/9;
+  }
+  /* Cards max-width: 50% → 100% */
+  section[style*="padding-top: 180px"] div[style*="max-width: 50%"] {
+    max-width: 100% !important;
+  }
+
+  /* =====================================================================
+     STORIES PAGE — mobile overrides for inline Figma styles
+     ===================================================================== */
+
+  /* Stories hero: override 40px inline padding */
+  section[style*="padding-left: 40px"][style*="padding-top: 16px"] {
+    padding: 8px !important;
+  }
+  /* Stories work-heading section: override 104px inline padding */
+  section.section[style*="padding-left: 104px"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  section.section[style*="padding-left: 104px"] > div {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    max-width: 100% !important;
+  }
+  /* Stories heading: 61.9px → responsive */
+  section.section[style*="padding-left: 104px"] div[style*="font-size: 61.9px"] {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  /* =====================================================================
+     PLANS PAGE — FAQ section override (88px 104px inline padding)
+     ===================================================================== */
+
+  /* FAQ with inline padding 88px 104px */
+  section.faq[style*="padding: 88px 104px"] {
+    padding: 48px 0 !important;
+  }
+  section.faq[style*="padding: 88px 104px"] > div {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  /* =====================================================================
+     ALL PAGES — generic inline style overrides for inner-page sections
+     ===================================================================== */
+
+  /* Any section with 104px left padding (Figma default) */
+  section[style*="padding-left: 104px"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  section[style*="padding-left: 104px"] > div {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  /* Any section with 144px left padding */
+  section[style*="padding-left: 144px"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  section[style*="padding-left: 144px"] > div {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  /* Generic large font overrides for inner page headings */
+  div[style*="font-size: 73.8px"] {
+    font-size: 36px !important;
+    line-height: 1.1 !important;
+  }
+  div[style*="font-size: 61.9px"] {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+  }
+  div[style*="font-size: 60.5px"] {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+  }
+  div[style*="font-size: 44.5px"] {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Footer brand name — 271.3px → mobile size (all inner pages) */
+  div[style*="font-size: 271.3px"] {
+    font-size: 56px !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.03em !important;
+  }
+
+  /* Footer container inner-page min-height override */
+  div[style*="min-height: 700px"][style*="padding-left: 39.67px"] {
+    min-height: auto !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
 }
 
 /* --- Fluid intermediate breakpoint (769px - 1200px) --- */
