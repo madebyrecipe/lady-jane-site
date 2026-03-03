@@ -2510,6 +2510,20 @@ body[data-page="services"] .pricing-heading .tag {
   color: #2C1F14; opacity: 0.5;
 }
 
+/* News card image — override Figma 4px inline radius */
+.news-card-img {
+  border-radius: 12px !important;
+}
+.news-card-img img {
+  border-radius: 12px !important;
+}
+/* News divider — gradient fade instead of thin outline */
+.news-divider {
+  height: 1px !important;
+  opacity: 1 !important;
+  outline: none !important;
+}
+
 /* ========== 25. TRUSTED BY / LOGO CARDS (grid + hover overlay) ========== */
 .trusted-section {
   width: 100%; max-width: 1728px;
@@ -4651,23 +4665,28 @@ footer#footer,
     padding-top: 48px !important;
     padding-bottom: 48px !important;
   }
-  .news[style*="padding-left: 104px"] > div {
+  .news[style*="padding-left: 104px"] > div,
+  .news[style*="padding-left: 104px"] .news-inner {
     padding-left: 24px !important;
     padding-right: 24px !important;
   }
-  /* News cards — stack vertically */
+  /* News cards — stack vertically (class + attribute fallback) */
+  .news .news-card-grid,
   .news div[style*="gap: 16px"][style*="inline-flex"] {
     flex-direction: column !important;
     width: 100% !important;
   }
+  .news .news-card,
   .news div[style*="flex: 1 1 0"] {
     flex: none !important;
     width: 100% !important;
   }
+  .news .news-card-img,
   .news div[style*="height: 286px"] {
     height: auto !important;
     aspect-ratio: 16/9;
   }
+  .news .news-card-text,
   .news div[style*="padding-right: 64px"] {
     padding-right: 4px !important;
   }
